@@ -12,7 +12,7 @@ data_dummies = pd.get_dummies(data_lite)
 print(data_dummies.head())
 
 #定义数据集的特征值
-features = data_dummies.loc['年龄':,:'职业_ Transport-moving']
+features = data_dummies.loc[:,'年龄':'职业_ Transport-moving']
 #将特征值数值赋值为X
 X = features.values
 #将收入大于50K为预测目标
